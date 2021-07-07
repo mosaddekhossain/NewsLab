@@ -1,0 +1,68 @@
+.pre-header.dark-color .short-link li a:hover,
+.pre-header.dark-color .social-link li a:hover,
+.news-ticker > ul > li > a:hover,
+.news-title a:hover,
+.news-list-wrap .post-contents .post-heading a:hover,
+.news-list-wrap .post-contents .post-meta .comments a:hover,
+.footer .news-post-widget .news-list-wrap .post-contents .post-heading a:hover,
+.footer .footer-cat li a:hover,
+.footer a:hover,
+.login-form .form-suggested-link a:hover,
+.login-form #back,
+.meta-info div a:hover,
+.post-paragraph a,
+.post-pagination a:hover,
+.post-pagination a:hover p,
+.comments-list a:hover,
+.comments-list .comment-reply:hover,
+.header .search button:hover, .header .search button:focus,
+.popular-post li a:hover,
+.contact-row address a {
+    color: #7a1fa2;
+}
+
+.footer .footer-cat li a:hover {
+    border: 1px solid #7a1fa2;
+}
+
+nav ul li a:hover, nav ul li a:focus,
+nav ul li.active > a,
+nav ul li ul li a:hover,
+.Brick .caption-meta .post-category:hover,
+.btn-dark:hover,
+.owl-theme .owl-nav [class*='owl-']:hover,
+#tb-scroll-to-top:hover,
+.meta-info .post-category a:hover,
+.tags a:hover,
+.reply-comments-form .btn:hover,
+.tag-clouds a:hover,
+.slider-news .item .special-news .sp-cat:hover,
+.gal-news .item .special-news .sp-cat:hover,
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span,
+.theme-color,
+.main-nav li.active > a,
+.main-nav li:hover > a{
+    background: #7a1fa2;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    border-color: #7a1fa2;
+    background-color: #7a1fa2;
+}
+
+.footer-light .footer-cat li a:hover {
+    padding: 0;
+    border: none;
+}
+
+
+@media (max-width: 991px){
+    .main-nav > li.active > a {
+        color: #fff;
+        background-color: #7a1fa2;
+    }
+    .main-nav li:hover > a {
+        color: #fff;
+    }
+}

@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Mosaddek">
+
+    <!--favicon icon-->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <title>Magazine - newspaper magazine template</title>
+
+    <!--vendor style-->
+    <link href="assets/vendor/bs/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="assets/vendor/owl/assets/owl.carousel.css" rel="stylesheet">
+    <link href="assets/vendor/owl/assets/owl.theme.default.css" rel="stylesheet">
+
+    <!--google font-->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!--custom css-->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <!--theme color change-->
+    <!--<link href="assets/dev/theme-color/theme-green.css" rel="stylesheet">-->
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/vendor/html5shiv.js"></script>
+    <script src="assets/vendor/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class=" ">
+
+    <div class=" ">
+        <!--pre header start-->
+        <div class="pre-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <a href="#" id="short-link-toggle"><i class="fa fa-bars"></i></a>
+                        <ul class="short-link">
+                            <li>Sunday, January 23, 2017</li>
+                            <li><a href="#" data-toggle="modal" data-target="#log-in">Sign in / Join</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Advertisement</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Buy Now</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="social-link pull-right clearfix">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--login form modal start-->
+        <div class="modal fade" tabindex="-1" role="dialog" id="log-in">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                        <div class="login-form">
+
+                            <!--login start-->
+                            <form class="login-form-wrap">
+                                <h2 class="text-center">Welcome to Login</h2>
+                                <div class="form-group">
+                                    <label>User Name</label>
+                                    <input type="text" class="form-control" placeholder="User Name">
+                                </div>
+                                <div class="form-group">
+                                    <label >Password</label>
+                                    <input type="password" class="form-control" placeholder="Password">
+                                </div>
+
+                                <button type="submit" class="btn btn-dark">Login</button>
+
+                                <div class="form-suggested-link">
+                                    <a href="#" id="fp-btn">Forgot Password</a>
+                                    <span class="pull-right">Not a member yet? <a href="#" id="reg-btn">Join Today</a></span>
+                                </div>
+
+                            </form>
+                            <!--login end-->
+
+                            <!--registration start-->
+                            <form class="reg-form-wrap" style="display: none">
+                                <h2 class="text-center">Register New Account</h2>
+                                <div class="form-group">
+                                    <label>User Name *</label>
+                                    <input type="text" class="form-control" placeholder="User Name">
+                                </div>
+                                <div class="form-group">
+                                    <label >Password *</label>
+                                    <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label >Email *</label>
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+
+                                <div class="form-group">
+                                    <label >Web</label>
+                                    <input type="text" class="form-control" placeholder="Web">
+                                </div>
+
+                                <div class="form-group">
+                                    <label >First Name</label>
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+
+                                <div class="form-group">
+                                    <label >Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Last Name">
+                                </div>
+
+                                <div class="form-group">
+                                    <label >About/Bio</label>
+                                    <textarea  class="form-control" rows="4"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-dark">Register</button>
+
+                                <div class="form-suggested-link">
+                                    <span class="">Already have an account? <a href="#" id="login-btn">Login</a></span>
+                                </div>
+
+                            </form>
+                            <!--registration end-->
+
+                            <!--forgot password start-->
+                            <form class="forgot-pwd-form-wrap" style="display:none;">
+
+                                <h2 class="text-center">Password Recovery</h2>
+                                <div class="form-group">
+                                    <label>Your Email</label>
+                                    <input type="text" class="form-control" placeholder="Your Email">
+                                </div>
+
+                                <button type="submit" class="btn btn-dark">Send My Password</button>
+                                <p class="text-muted help-block">A password will be e-mailed to you. </p>
+                                <a href="#" id="back"> <i class="fa fa-angle-left"></i> Back to Login page</a>
+                            </form>
+                            <!--forgot password end-->
+
+
+                        </div>
+
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <!--login form modal end-->
+        <!--pre header end-->
+
+        <!--header start-->
+        <header class="header">
+            <!--logo and advertisement start-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/img/logo.png" alt=""/></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="banner-ad">
+                            <a href="#"><img src="assets/img/header_ad.png" alt=""/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--logo and advertisement end-->
+
+            <!--nav start-->
+
+            <!--responsive shown only start-->
+            <div class="mobile-view">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a class="mobile" href="#">&#9776; Menu</a>
+                            <form class="form-inline search-mobile">
+                                <div class="dropdown">
+                                    <button class="search-icon-m" id="search-btn-m" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                    <div class="srch-row dropdown-menu dropdown-menu-right" aria-labelledby="search-btn-m">
+                                        <input type="text" class="form-control" placeholder="Search"/>
+                                        <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--responsive shown only end-->
+            <nav>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="main-nav">
+                            <li>
+                                    <a href="#">Home <i class="fa fa-angle-down"></i> </a>
+                                    <ul>
+                                        <li><a href="home-international.html">Home International</a></li>
+                                        <li><a href="home-fashion.html">Home Fashion</a></li>
+                                        <li><a href="home-travel.html">Home Travel</a></li>
+                                        <li><a href="home-food.html">Home Food</a></li>
+                                        <li><a href="home-sports.html">Home Sports</a></li>
+                                        <li><a href="home-celebrity.html">Home Celebrity</a></li>
+                                        <li><a href="home-blog.html">Home Blog</a></li>
+                                        <li><a href="full-width.html">Home Full width</a></li>
+                                        <li><a href="index.html">Home Box view</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a href="other-category.html">Business</a></li>
+                                <li><a href="home-international.html">International</a> </li>
+                                <li><a href="other-category.html">Tech</a></li>
+                                <li><a href="home-celebrity.html">Entertainment</a></li>
+                                <li>
+                                    <a href="#">Features <i class="fa fa-angle-down"></i></a>
+                                    <ul>
+                                        <li><a href="news-details.html">News Details</a></li>
+                                        <li><a href="author-list.html">Author List</a></li>
+                                        <li><a href="other-category.html">Category List page</a></li>
+                                        <li><a href="home-blog.html">Blog List</a></li>
+                                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                        <li><a href="contact.html">Contact Page</a></li>
+                                        <li><a href="footer-dark.html">Footer Dark</a></li>
+                                        <li><a href="footer-light.html">Footer light</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div style="clear:both;"></div>
+
+                            <form class="form-inline">
+                                <div class="dropdown search">
+                                    <button class="" id="search-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                    <div class="srch-row dropdown-menu dropdown-menu-right" aria-labelledby="search-btn">
+                                        <input type="text" class="form-control" placeholder="Search"/>
+                                        <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--nav end-->
+
+        </header>
+        <!--header end-->
+
+        <!--breaking news start-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="news-ticker" id="bn1">
+                        <div class="ticker-title"><h2>Breaking News</h2><span></span></div>
+                        <ul>
+                            <li><a href="#">Ouris interdum elit non sapien imperdiet, ac dapibus mi maximus</a></li>
+                            <li><a href="#">Tullam sit amet nisl exsagittis luctus sed, lobortis sed arcu</a></li>
+                            <li><a href="#">Fras lorem augue, facilisis a commodo in, facilisis finibus libero vel ultrices.</a></li>
+                            <li><a href="#">Qaecenas imperdiet ante vitae neque facilisis cursus</a></li>
+                            <li><a href="#">Yaecenas libero ipsum, placerat in mattis vel, tincidunt quis est.</a></li>
+                            <li><a href="#">urabitur tortor libero, vehicula sagittis luctus sed, lobortis sed arcu</a></li>
+                        </ul>
+                        <div class="ticker-btn">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--breaking news end-->
+
+
+        <!--news list start-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <!--breadcrumb start-->
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                      </ol>
+                    <!--breadcrumb end-->
+
+                    <!--post details header start-->
+                    <header class="news-details-header">
+                        <h1>Lorem ipsum dolor sit, consectetur adipisicing elit.</h1>
+                        <div class="meta-info">
+                            <div class="post-category">
+                                <a href="#">Travel</a>
+                                <a href="#">Business</a>
+                            </div>
+                            <div class="author">
+                                By - <a href="#">Jonathan Smith </a>
+                            </div>
+                            <div class="date">
+                                 January 29, 2017
+                            </div>
+                            <div class="post-view">
+                                <i class="fa fa-eye"></i> 129
+                            </div>
+                            <div class="post-cmnt">
+                                <a href="#"><i class="fa fa-comments-o"></i> 21</a>
+                            </div>
+                        </div>
+                        <div class="post-share">
+                            <a href="#" class="facebook btn"><i class="fa fa-facebook"></i> | Share on Facebook</a>
+                            <a href="#" class="twitter btn"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="google-plus btn"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="pinterest btn"><i class="fa fa-pinterest"></i></a>
+                            <a href="#" class="linkedin btn"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </header>
+                    <!--post details header end-->
+
+                    <!--post details start-->
+                    <div class="post-details">
+                        <div class="post-thumb-full">
+                            <img src="assets/img/g1.jpg" alt=""/>
+                            <div class="post-img-caption">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </div>
+                        </div>
+
+                        <!--post paragraph start-->
+                        <div class="post-paragraph text-justify">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam at cumque
+                                deserunt dolorem et, harum illo in, ipsa iure minima minus perspiciatis quos
+                                reprehenderit rerum sapiente soluta tenetur veniam.</p>
+                            <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing elit</a>. Amet aperiam at cumque
+                                deserunt dolorem et, harum illo in, ipsa iure minima minus perspiciatis quos
+                                reprehenderit rerum sapiente soluta tenetur veniam.</p>
+                            <div class="post-thumb-small">
+                                <img src="assets/img/st1.jpg" alt=""/>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam at cumque
+                                deserunt dolorem et, harum illo in, ipsa iure minima minus perspiciatis quos
+                                reprehenderit rerum sapiente soluta tenetur veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam at cumque
+                                deserunt dolorem et, harum illo in, ipsa iure minima minus perspiciatis quos
+                                reprehenderit rerum sapiente soluta tenetur veniam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam at cumque
+                                deserunt dolorem et, harum illo in, ipsa iure minima minus perspiciatis quos
+                                reprehenderit rerum sapiente soluta tenetur veniam.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda consequuntur
+                                ea in ipsum minus, nam optio reiciendis sapiente tenetur. Blanditiis cumque dolorem eum
+                                praesentium quaerat quidem saepe soluta, ut?</p>
+                            <h3>This is a headline</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda consequuntur
+                                ea in ipsum minus, nam optio reiciendis sapiente tenetur. Blanditiis cumque dolorem eum
+                                praesentium quaerat quidem saepe soluta, ut?</p>
+                            <div class="post-thumb-full">
+                                <img src="assets/img/g2.jpg" alt=""/>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda consequuntur
+                                ea in ipsum minus, nam optio reiciendis sapiente tenetur. Blanditiis cumque dolorem eum
+                                praesentium quaerat quidem saepe soluta, ut?</p>
+
+                            <blockquote><p>Aliquid assumenda consequuntur
+                                ea in ipsum minus, nam optio reiciendis sapiente tenetur. Blanditiis cumque dolorem eum
+                                praesentium quaerat quidem saepe soluta</p></blockquote>
+
+                            <h3>This is a headline</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda consequuntur
+                                ea in ipsum minus, nam optio reiciendis sapiente tenetur. Blanditiis cumque dolorem eum
+                                praesentium quaerat quidem saepe soluta, ut?</p>
+                            <ul>
+                                <li>Aliquid assumenda consequuntur
+                                    ea in ipsum minus Aliquid assumenda.</li>
+                                <li>Blanditiis cumque dolorem eum
+                                    praesentium quaerat</li>
+                                <li>Kraesentium quaerat quidem saepe soluta</li>
+                                <li>Morem ipsum dolor sit amet</li>
+                            </ul>
+
+                        </div>
+                        <!--post paragraph end-->
+
+                        <!--post share start-->
+                        <div class="post-share">
+                            <a href="#" class="facebook btn"><i class="fa fa-facebook"></i> | Share on Facebook</a>
+                            <a href="#" class="twitter btn"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="google-plus btn"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="pinterest btn"><i class="fa fa-pinterest"></i></a>
+                            <a href="#" class="linkedin btn"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                        <!--post share end-->
+
+                        <!--tags start-->
+                        <div class="tags">
+                            <span>Tags</span>
+                            <a href="#">travel</a>
+                            <a href="#">world</a>
+                            <a href="#">politics</a>
+                            <a href="#">fashion</a>
+                        </div>
+                        <!--tags end-->
+
+                        <!--post pagination start-->
+                        <div class="post-pagination">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="#">
+                                        <strong><i class="fa fa-angle-double-left"></i> Previous</strong>
+                                        <p>Blanditiis cumque dolorem eum praesentium quaerat</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="#" class="pull-right text-right">
+                                        <strong>Next <i class="fa fa-angle-double-right"></i></strong>
+                                        <p>Blsse cumque dolorem eum praesentium quaerat</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--post pagination end-->
+
+                        <!--author short info start-->
+                        <div class="author-short-information">
+                            <div class="news-list-wrap news-thumb-aside">
+                                <figure class="post-thumb">
+                                    <a href="#"><img src="assets/img/img1.jpg" alt=""></a>
+                                </figure>
+                                <article class="post-contents">
+                                    <h4 class="post-heading">
+                                        <a href="#">Jonathan Smith / 21 Posts</a>
+
+                                        <span class="author-social-network">
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                                        </span>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aliquam
+                                        asperiores autem debitis deleniti dolores eligendi esse laudantium magni maiores
+                                        officiis perspiciatis quaerat quis quod, reiciendis sapiente sit ut.</p>
+                                </article>
+                            </div>
+                        </div>
+                        <!--author short info end-->
+
+                        <!--related post start-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 class="news-title"><a href="#">Related Post</a></h3>
+                            </div>
+
+                            <div class="col-md-6">
+                                <ul class="news-post-widget">
+                                    <li>
+                                        <div class="news-list-wrap">
+                                            <figure class="post-thumb zoom-img">
+                                                <a href="#"><img src="assets/img/th-2.jpg" alt=""></a>
+                                            </figure>
+                                            <article class="post-contents">
+                                                <h4 class="post-heading"><a href="#">Atum lomen delenit augue duis dolore te feut ament somemn</a></h4>
+                                                <div class="post-meta">
+                                                    <span class="date">January 25, 2017</span>
+                                                    <span class="comments"><a href="#"><i class="fa fa-comments-o"></i> 1</a></span>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="news-post-widget">
+                                    <li>
+                                        <div class="news-list-wrap">
+                                            <figure class="post-thumb zoom-img">
+                                                <a href="#"><img src="assets/img/th-3.jpg" alt=""></a>
+                                            </figure>
+                                            <article class="post-contents">
+                                                <h4 class="post-heading"><a href="#">Atum lomen delenit augue duis dolore te feut ament somemn</a></h4>
+                                                <div class="post-meta">
+                                                    <span class="date">January 25, 2017</span>
+                                                    <span class="comments"><a href="#"><i class="fa fa-comments-o"></i> 1</a></span>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--related post end-->
+
+                        <!--comments tree start-->
+                        <div class="row">
+                            <div class="col-md-12">
+                             <h3 class="news-title"><a href="#">10 COMMENTS</a></h3>
+
+                                <ul class="media-list comments-list  clearlist">
+
+                                    <!-- Comment Item start-->
+                                    <li class="media">
+
+                                        <a class="pull-left" href="#"><img class="media-object comment-avatar" src="assets/img/img1.jpg" alt="" width="50" height="50"></a>
+
+                                        <div class="media-body">
+                                            <div class="comment-info">
+                                                <div class="comment-author">
+                                                    <a href="#">John Doe</a>
+                                                </div>
+                                                July 02, 2017, at 11:34
+                                                <a href="#" class="comment-reply"><i class="fa fa-comment-o"></i>Reply</a>
+                                            </div>
+
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at magna ut ante eleifend eleifend.
+                                            </p>
+
+                                            <!--  second level Comment start-->
+                                            <div class="media">
+
+                                                <a class="pull-left" href="#"><img class="media-object comment-avatar" src="assets/img/img3.jpg" alt="" width="50" height="50"></a>
+
+                                                <div class="media-body">
+
+                                                    <div class="comment-info">
+                                                        <div class="comment-author">
+                                                            <a href="#">Maragarita Rose</a>
+                                                        </div>
+                                                        July 02, 2017, at 11:34
+                                                        <a href="#" class="comment-reply"><i class="fa fa-comment-o"></i>Reply</a>
+                                                    </div>
+
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at magna ut ante eleifend eleifend.
+                                                    </p>
+
+
+                                                    <!-- third level Comment start -->
+                                                    <div class="media">
+
+                                                        <a class="pull-left" href="#"><img class="media-object comment-avatar" src="assets/img/thumb2.jpg" alt="" width="50" height="50"></a>
+
+                                                        <div class="media-body">
+
+                                                            <div class="comment-info">
+                                                                <div class="comment-author">
+                                                                    <a href="#">Margarita Rose</a>
+                                                                </div>
+                                                                July 02, 2017, at 11:34
+                                                                <a href="#" class="comment-reply"><i class="fa fa-comment-o"></i>Reply</a>
+                                                            </div>
+
+                                                            <p>
+                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at magna ut ante eleifend eleifend.
+                                                            </p>
+
+
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- third level Comment end -->
+
+                                                </div>
+
+                                            </div>
+                                            <!-- second level Comment end -->
+
+                                        </div>
+
+                                    </li>
+                                    <!-- End Comment Item -->
+
+                                    <!-- Comment Item start-->
+                                    <li class="media">
+
+                                        <a class="pull-left" href="#"><img class="media-object comment-avatar" src="assets/img/img4.jpg" alt="" width="50" height="50"></a>
+
+                                        <div class="media-body">
+
+                                            <div class="comment-info">
+                                                <div class="comment-author">
+                                                    <a href="#">John Doe</a>
+                                                </div>
+                                                July 02, 2017, at 11:34
+                                                <a href="#" class="comment-reply"><i class="fa fa-comment-o"></i>Reply</a>
+                                            </div>
+
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at magna ut ante eleifend eleifend.
+                                            </p>
+
+                                        </div>
+
+                                    </li>
+                                    <!-- End Comment Item -->
+
+                                    <!-- Comment Item start-->
+                                    <li class="media">
+
+                                        <a class="pull-left" href="#"><img class="media-object comment-avatar" src="assets/img/th-1.jpg" alt="" width="50" height="50"></a>
+
+                                        <div class="media-body">
+
+                                            <div class="comment-info">
+                                                <div class="comment-author">
+                                                    <a href="#">John Doe</a>
+                                                </div>
+                                                July 02, 2017, at 11:34
+                                                <a href="#" class="comment-reply"><i class="fa fa-comment-o"></i>Reply</a>
+                                            </div>
+
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at magna ut ante eleifend eleifend.
+                                            </p>
+
+                                        </div>
+
+                                    </li>
+                                    <!-- End Comment Item -->
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--comments tree end-->
+
+                        <!--reply comments start-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 class="news-title"><a href="#">Leave a Reply</a></h3>
+                            </div>
+                            <form class="reply-comments-form w-100 px-3">
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                      <label>Name</label>
+                                      <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                      <label>Email *</label>
+                                      <input type="email" class="form-control" required>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>Website</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <label>Comments *</label>
+                                        <textarea class="form-control" rows="5" name="comment" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <button type="submit" class="btn"> Post Comment </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--reply comments end-->
+
+                    </div>
+                    <!--post details end-->
+
+                </div>
+                <div class="col-md-4">
+
+                    <!--aside ads start-->
+                    <div class="widget-aside">
+                        <a href="#" class="widget-ads">
+                            <img src="assets/img/aside-ad.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <!--aside ads end-->
+
+                    <!--editor picks start-->
+                    <div class="widget-aside">
+                        <h3 class="news-title"><a href="#">Editor Picks</a></h3>
+                        <ul class="news-post-widget">
+                            <li>
+                                <div class="news-list-wrap news-thumb-aside">
+                                    <figure class="post-thumb">
+                                        <a href="#"><img src="assets/img/img1.jpg" alt=""/></a>
+                                    </figure>
+                                    <article class="post-contents">
+                                        <h4 class="post-heading"><a href="#">Atum lomen delenit augue lipsum emamt duis dolore te feut ament somemn...</a></h4>
+                                        <div class="post-meta">
+                                            <span class="date">January 25, 2017</span>
+                                            <span class="comments"><a href="#"><i class="fa fa-comments-o"></i> 1</a></span>
+                                        </div>
+                                    </article>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news-list-wrap news-thumb-aside">
+                                    <figure class="post-thumb">
+                                        <a href="#" class="">
+                                            <img src="assets/img/th-1.jpg" alt=""/>
+                                        </a>
+                                    </figure>
+                                    <article class="post-contents">
+                                        <h4 class="post-heading"><a href="#">Komen delenit augue lipsum emamt duis dolore te feut ament somemn...</a></h4>
+                                        <div class="post-meta">
+                                            <span class="date">January 25, 2017</span>
+                                            <span class="comments"><a href="#"><i class="fa fa-comments-o"></i> 0</a></span>
+                                        </div>
+                                    </article>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news-list-wrap news-thumb-aside">
+                                    <figure class="post-thumb">
+                                        <a href="#"><img src="assets/img/img3.jpg" alt=""/></a>
+                                    </figure>
+                                    <article class="post-contents">
+                                        <h4 class="post-heading"><a href="#">Mtum lomen delenit augue lipsum emamt duis dolore te feut ament somemn...</a></h4>
+                                        <div class="post-meta">
+                                            <span class="date">January 25, 2017</span>
+                                            <span class="comments"><a href="#"><i class="fa fa-comments-o"></i> 0</a></span>
+                                        </div>
+                                    </article>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--editor picks end-->
+
+                    <!--popular video start-->
+                    <div class="widget-aside">
+                        <h3 class="news-title"><a href="#">Popular Video</a></h3>
+                        <ul class="news-post-widget">
+                            <li>
+                                <div class="news-list-wrap">
+                                    <figure class="post-thumb video-news zoom-img">
+                                        <a href="#"><img src="assets/img/th-4.jpg" alt=""></a>
+                                    </figure>
+                                    <article class="post-contents">
+                                        <h4 class="post-heading"><a href="#">Atum lomen delenit augue duis dolore te feut ament somemn</a></h4>
+                                        <div class="post-meta">
+                                            <span class="date">January 25, 2017</span>
+                                            <span class="comments"><a href="#"><i class="fa fa-comments-o"></i> 1</a></span>
+                                        </div>
+                                        <div class="post-news">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti deserunt eaque eius eos esse fuga laudantium quam suscipit tempora ut? Incidunt ipsa modi natus perspiciatis quae quaerat quo sit voluptatem! ...
+                                        </div>
+                                    </article>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--popular video end-->
+
+                    <!--newsletter start-->
+                    <div class="widget-aside">
+                        <h3 class="news-title"><a href="#">Newsletter</a></h3>
+                        <form class="newsletter">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Enter Email Address" aria-label="Enter Email Address" aria-describedby="button-addon1">
+                                <div class="input-group-append">
+                                  <button class="btn btn-success" type="button" id="button-addon1">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--newsletter end-->
+
+                    <!--most read news start-->
+                    <div class="widget-aside">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-link active" id="most-read-tab" data-toggle="tab" href="#most-read" role="tab" aria-controls="most-read" aria-selected="true">Most Read</a>
+                            <a class="nav-link" id="popular-cat-tab" data-toggle="tab" href="#popular-cat" role="tab" aria-controls="popular-cat" aria-selected="false">Popular Category</a>
+                        </div>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="most-read" role="tabpanel" aria-labelledby="most-read-tab">
+                                <ul class="popular-post">
+                                    <li>
+                                        <a href="#">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                                            Exercitation +1 labore velit</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                                            Exercitation +1 labore velit</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                                            Exercitation +1 labore velit</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kuck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                                            Exercitation +1 labore velit</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                                            Exercitation +1 labore velit</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                                            Exercitation +1 labore velit</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="popular-cat" role="tabpanel" aria-labelledby="popular-cat-tab">
+                                <div class="tag-clouds">
+                                    <a href="#">Business</a>
+                                    <a href="#">Banks</a>
+                                    <a href="#">Politics</a>
+                                    <a href="#">Fashion</a>
+                                    <a href="#">Scandal</a>
+                                    <a href="#">Travel</a>
+                                    <a href="#">Sports</a>
+                                    <a href="#">Food</a>
+                                    <a href="#">Video</a>
+                                    <a href="#">Lifestyle</a>
+                                    <a href="#">Government</a>
+                                    <a href="#">Money</a>
+                                    <a href="#">Euro</a>
+                                    <a href="#">Europe</a>
+                                    <a href="#">Middle East</a>
+                                    <a href="#">Education</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--most read news end-->
+
+                </div>
+            </div>
+
+        </div>
+        <!--news list end-->
+
+
+
+        <!--footer start-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-logo">
+                            <img src="assets/img/footer-logo.png" alt=""/>
+                        </div>
+
+                        <div class="abt-mag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at beatae blanditiis deserunt
+                            dolor doloremque, ea facilis ipsa molestiae nesciunt non pariatur placeat quaerat
+                            repudiandae sapiente sequi sit ullam unde!
+                        </div>
+                        <div class="email-wrap">Contact us: <a href="#">contact@newsmag.com</a></div>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Popular Post</h3>
+                        <ul class="news-post-widget">
+                            <li>
+                                <div class="news-list-wrap news-thumb-aside">
+                                    <figure class="post-thumb">
+                                        <a href="#"><img src="assets/img/img1.jpg" alt=""></a>
+                                    </figure>
+                                    <article class="post-contents">
+                                        <h4 class="post-heading"><a href="#">Atum lomen delenit augue lipsum emamt...</a></h4>
+                                        <div class="post-meta">
+                                            <span class="date">January 25, 2017</span>
+                                            <span class="comments"><a href="#"><i class="fa fa-comments-o"></i> 1</a></span>
+                                        </div>
+                                    </article>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news-list-wrap news-thumb-aside">
+                                    <figure class="post-thumb">
+                                        <a href="#" class="">
+                                            <img src="assets/img/th-1.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                    <article class="post-contents">
+                                        <h4 class="post-heading"><a href="#">Komen delenit augue lipsum emamt duis dolore somemn...</a></h4>
+                                        <div class="post-meta">
+                                            <span class="date">January 25, 2017</span>
+                                            <span class="comments"><a href="#"><i class="fa fa-comments-o"></i> 0</a></span>
+                                        </div>
+                                    </article>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="news-list-wrap news-thumb-aside">
+                                    <figure class="post-thumb">
+                                        <a href="#"><img src="assets/img/img3.jpg" alt=""></a>
+                                    </figure>
+                                    <article class="post-contents">
+                                        <h4 class="post-heading"><a href="#">Mtum lomen delenit dolore te feut ament somemn...</a></h4>
+                                        <div class="post-meta">
+                                            <span class="date">January 25, 2017</span>
+                                            <span class="comments"><a href="#"><i class="fa fa-comments-o"></i> 0</a></span>
+                                        </div>
+                                    </article>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Hot Category</h3>
+                        <ul class="list-unstyled footer-cat">
+                            <li><a href="#">World <span>[10]</span> </a></li>
+                            <li><a href="#">Business <span>[14]</span></a></li>
+                            <li><a href="#">Travel <span>[30]</span></a></li>
+                            <li><a href="#">Sports <span>[14]</span></a></li>
+                            <li><a href="#">Entertainment <span>[15]</span></a></li>
+                            <li><a href="#">Lifestyle <span>[07]</span></a></li>
+                            <li><a href="#">World <span>[10]</span> </a></li>
+                            <li><a href="#">Business <span>[14]</span></a></li>
+                            <li><a href="#">Travel <span>[30]</span></a></li>
+                            <li><a href="#">Sports <span>[14]</span></a></li>
+                            <li><a href="#">Entertainment <span>[15]</span></a></li>
+                            <li><a href="#">Lifestyle <span>[07]</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="copyright">
+                                © Copyright 2021 : All Rights Reserved. Design And Developed By <a href="http://thevectorlab.net/" target="_blank">VectorLab</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="footer-short-link">
+                                <a href="#">About Us</a>
+                                <a href="#">Advertisement</a>
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer end-->
+
+    </div>
+
+    <script src="assets/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendor/bs/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/news-ticker.js"></script>
+    <script src="assets/vendor/jquery.isotope.js"></script>
+    <script src="assets/vendor/owl/owl.carousel.js"></script>
+    <!--[if lt IE 9]>
+    <script src="assets/vendor/modernizr.js"></script>
+    <![endif]-->
+
+    <!--init scripts-->
+    <script src="assets/js/scripts.min.js"></script>
+
+</body>
+</html>
+
